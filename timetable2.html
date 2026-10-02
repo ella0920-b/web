@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표</title>
+    <style>
+        * {margin: 0;
+            padding: 0;
+        }
+
+        body {font-family: "굴림", sans-serif;
+            padding: 20px;
+        }
+
+        h1 {text-align: center;
+            color: navy;
+            margin-bottom: 15px;
+        }
+
+        #timetable {width: 800px;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+
+        th, td {border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+            width: 120px;
+            height: 50px;
+            font-size: 11pt;
+        }
+
+        thead > tr > th {background-color: lightgray;
+            font-size: 12pt;
+        }
+
+        .period {background-color: #f0f0f0;
+            font-weight: bold;
+            width: 80px;
+        }
+
+        .sub1 {background-color: lightblue;
+        }
+
+        .sub2 {background-color: lightgreen;
+        }
+
+        .sub3 {background-color: lightyellow;
+        }
+
+        .sub4 {background-color: peachpuff;
+        }
+
+        .sub5 {background-color: lavender;
+        }
+
+        .sub6 {background-color: lightcyan;
+        }
+
+        .sub7 {background-color: mistyrose;
+        }
+
+        tbody td:hover {background-color: orange !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>시간표</h1>
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="period">1교시</td>
+                <td></td>
+                <td rowspan="4" class="sub1">소자제작실습1 (캡스톤디자인)</td>
+                <td rowspan="3" class="sub2">감성 디자인을 위한 AI와 일러스트</td>
+                <td rowspan="3" class="sub3">열역학</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">2교시</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">3교시</td>
+                <td style="background-color: pink;">채플</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">4교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">5교시</td>
+                <td rowspan="4" class="sub4">정보기술과 혁신 (캡스톤디자인)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">6교시</td>
+                <td rowspan="3" class="sub5">웹프로그래밍</td>
+                <td></td>
+                <td rowspan="3" class="sub6">자연어처리</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">7교시</td>
+                <td rowspan="3" class="sub7">뉴로모픽컴퓨팅</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">8교시</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="period">9교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>
